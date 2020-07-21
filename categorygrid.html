@@ -1,0 +1,130 @@
+<style media="screen">
+
+    .box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width:960px){
+      .box {
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
+
+    @media (min-width:768px) and (max-width:960px){
+      .box {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    :root{
+      --color1: #fbbb73;
+      --color2: #fe908b;
+      --color3: #c48de4;
+      --color4: #fe94d4;
+      --color5: #8ecbe7;
+      --color6: #8ce7ce;
+    }
+
+    .grid-container {
+      position:relative;
+      transition-duration:0.5s;
+      transform: scale(1.00);
+      text-align: center;
+      margin:2px;
+
+    }
+
+    .grid-container:hover{
+      background-color:#00000020;
+      transition-duration:0.5s;
+      position:relative;
+      transform: scale(1.05);
+
+
+    }
+
+    .grid-img {
+      width: 85%;
+      padding: auto;
+    }
+
+    .audio-container:hover{
+      background-color: var(--color1);
+    }
+
+    .video-container:hover{
+      background-color: var(--color5);
+    }
+
+    .articulo-container:hover{
+      background-color: var(--color4);
+
+    }
+
+    .actividad-container:hover{
+      background-color: var(--color3);
+
+    }
+
+    .galeria-container:hover{
+      background-color: var(--color2);
+
+    }
+
+    .interactivo-container:hover{
+      background-color: var(--color6);
+
+    }
+
+
+    </style>
+    <!--
+    https://encasa.parqueexplora.org/images/categorygrid/Videos_off.png
+    https://encasa.parqueexplora.org/images/categorygrid/Interactivos_off
+    https://encasa.parqueexplora.org/images/categorygrid/Galerias_off.png
+    https://encasa.parqueexplora.org/images/categorygrid/Audios_off.png
+    https://encasa.parqueexplora.org/images/categorygrid/Articulos_off.png
+    https://encasa.parqueexplora.org/images/categorygrid/Actividades_off.png
+  -->
+    <div class="container-fluid">
+      <div class="box">
+        <div class="grid-container audio-container">
+          <a href="https://encasa.parqueexplora.org/audio/">
+            <img  class="grid-img" src="https://encasa.parqueexplora.org/images/categorygrid/Audios_off.png" alt="audio_icon">
+          </a>
+        </div>
+
+        <div class="grid-container video-container">
+          <a href="https://encasa.parqueexplora.org/video/">
+            <img class="grid-img" src="https://encasa.parqueexplora.org/images/categorygrid/Videos_off.png " alt="video_icon">
+          </a>
+        </div>
+
+        <div class="grid-container articulo-container">
+          <a href="https://encasa.parqueexplora.org/articulo/">
+            <img class="grid-img" src="https://encasa.parqueexplora.org/images/categorygrid/Articulos_off.png" alt="audio_icons">
+          </a>
+        </div>
+
+        <div class="grid-container actividad-container">
+          <a href="https://encasa.parqueexplora.org/actividad/">
+            <img class="grid-img" src="https://encasa.parqueexplora.org/images/categorygrid/Actividades_off.png" alt="audio_icons">
+          </a>
+        </div>
+
+        <div class="grid-container galeria-container">
+          <a href="https://encasa.parqueexplora.org/galeria/">
+            <img class="grid-img" src="https://encasa.parqueexplora.org/images/categorygrid/Galerias_off.png" alt="audio_icons">
+          </a>
+        </div>
+
+        <div class="grid-container interactivo-container">
+          <a href="https://encasa.parqueexplora.org/interactivo/">
+            <img class="grid-img" src="https://encasa.parqueexplora.org/images/categorygrid/Interactivos_off.png" alt="audio_icons">
+          </a>
+        </div>
+
+
+      </div>
+    </div>
